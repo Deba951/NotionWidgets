@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      background-color: #000000;
+      padding-top: 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social {
+      background-color: #eae9e9;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .icon img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .social:hover {
+      color: #fff;
+    }
+
+    .blog:hover {
+      background-color: #bababa;
+    }
+
+    .github:hover {
+      background-color: #24292e;
+    }
+
+    .facebook:hover {
+      background-color: #4267B2;
+    }
+
+    .instagram:hover {
+      background: radial-gradient(circle, rgb(90, 18, 245) 10%, rgba(250, 16, 235, 1) 76%, rgb(192, 58, 241) 100%);
+    }
+
+    .linkedin:hover {
+      background-color: #0e76a8;
+    }
+
+    .twitter:hover {
+      background-color: #26a7de;
+    }
+
+    .reddit:hover {
+      background-color: #ff4500;
+    }
+
+    .udemy:hover {
+      background-color: #96a7da;
+    }
+
+    .coursera:hover {
+      background-color: #f38484;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Start GitHub Icon -->
+    <div id="github" onclick="navigate(this.id)" class="social github">
+      <span class="icon"><i class="fab fa-github"></i></span>
+    </div>
+    <!-- End GitHub Icon -->
+
+    <!-- Start Blog Icon -->
+    <div id="blog" onclick="navigate(this.id)" class="social blog">
+      <span class="icon"><img src="hashnode.png" alt="Blog"></span>
+    </div>
+    <!-- End Blog Icon -->
+
+    <!-- Start Facebook Icon -->
+    <div id="facebook" onclick="navigate(this.id)" class="social facebook">
+      <span class="icon"><i class="fab fa-facebook"></i></span>
+    </div>
+    <!-- End Facebook Icon -->
+
+    <!-- Start Instagram Icon -->
+    <div id="instagram" onclick="navigate(this.id)" class="social instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
+    </div>
+    <!-- End Instagram Icon -->
+
+    <!-- Start LinkedIn Icon -->
+    <div id="linkedin" onclick="navigate(this.id)" class="social linkedin">
+      <span class="icon"><i class="fab fa-linkedin"></i></span>
+    </div>
+    <!-- End LinkedIn Icon -->
+
+    <!-- Start Twitter Icon -->
+    <div id="twitter" onclick="navigate(this.id)" class="social twitter">
+      <span class="icon"><i class="fab fa-twitter"></i></span>
+    </div>
+    <!-- End Twitter Icon -->
+
+    <!-- Start Reddit Icon -->
+    <div id="reddit" onclick="navigate(this.id)" class="social reddit">
+      <span class="icon"><i class="fab fa-reddit"></i></span>
+    </div>
+    <!-- End Reddit Icon -->
+
+    <!-- Start Udemy Icon -->
+    <div id="udemy" onclick="navigate(this.id)" class="social udemy">
+      <span class="icon"><img src="udemy.png" alt="Udemy"></span>
+    </div>
+    <!-- End Udemy Icon -->
+
+    <!-- Start Coursera Icon -->
+    <div id="coursera" onclick="navigate(this.id)" class="social coursera">
+      <span class="icon"><img src="coursera.png" alt="Coursera"></span>
+    </div>
+    <!-- End Coursera Icon -->
+
+  </div>
+
+  <script>
+    function navigate(id) {
+      if (id === "github") {
+        window.open("https://github.com/", '_blank').focus();
+      } else if (id === "blog") {
+        window.open("https://debarghya.hashnode.dev/", '_blank').focus();
+      } else if (id === "facebook") {
+        window.open("https://www.facebook.com/debarghya.chakravarty.7/", '_blank').focus();
+      } else if (id === "instagram") {
+        window.open("https://www.instagram.com/alpha_dc27", '_blank').focus();
+      } else if (id === "linkedin") {
+        window.open("https://www.linkedin.com/in/debarghya-chakravarty-5a2563238/", '_blank').focus();
+      } else if (id === "twitter") {
+        window.open("https://x.com/alphadc_27", '_blank').focus();
+      } else if (id === "reddit") {
+        window.open("https://www.reddit.com/user/General-Cherry-4390/", '_blank').focus();
+      } else if (id === "udemy") {
+        window.open("https://www.udemy.com/", '_blank').focus();
+      } else if (id === "coursera") {
+        window.open("https://www.coursera.org/", '_blank').focus();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
